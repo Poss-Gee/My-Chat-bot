@@ -15,7 +15,9 @@ const qaPairs = [
     },
         {
         pattern: /help|support/i,
-        response: "Sure, I'm here to help! What do you need assistance with?"
+        response:[
+            "Sure, I'm here to help! What do you need assistance with?"
+        ]
     },
     {
         pattern:/how old are you/i,
