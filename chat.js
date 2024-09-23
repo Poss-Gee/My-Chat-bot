@@ -9,22 +9,22 @@ const qaPairs = [
     },
     {
         pattern:/fine|greate/i,
-        responses:[
+        responses: [
             "Nice one there! It's great to here that. How can I assist you today?"
         ]
     },
-        {
+    {
         pattern: /help|support/i,
-        response:[
+        response: [
             "Sure, I'm here to help! What do you need assistance with?"
         ]
     },
     {
         pattern:/how old are you/i,
-        responses:[     
+        responses: [     
             "I don’t have an age like humans do, but I’m always fresh and ready to help! What’s on your mind today?",
             "I may not have a birthday, but I’m always here to assist you! What can I do for you today?"
-    ]
+        ]
     },
     {
         pattern: /What's the weather like today|today/i,
