@@ -41,7 +41,7 @@ const qaPairs = [
         ]
     },
     {
-        pattern: /what is your name|who are you|tell me your name/i,
+        pattern: /what is your name|who are you|tell me your name|what's your name/i,
         responses: [
             "I am your friendly chatbot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
             "You can call me Chatbot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
