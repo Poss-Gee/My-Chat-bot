@@ -20,7 +20,7 @@ const qaPairs = [
         ]
     },
     {
-        pattern:/how old are you/i,
+        pattern:/how old are you|I'm/i,
         responses: [     
             "I don’t have an age like humans do, but I’m always fresh and ready to help! What’s on your mind today?",
             "I may not have a birthday, but I’m always here to assist you! What can I do for you today?"
