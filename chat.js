@@ -20,7 +20,7 @@ const qaPairs = [
         ]
     },
     {
-        pattern:/how old are you|I'm/i,
+        pattern:/how old are you/i,
         responses: [     
             "I don’t have an age like humans do, but I’m always fresh and ready to help! What’s on your mind today?",
             "I may not have a birthday, but I’m always here to assist you! What can I do for you today?"
@@ -54,7 +54,7 @@ const qaPairs = [
         ]
     },
     {
-        pattern: /what is your name|who are you|tell me your name|what's your name/i,
+        pattern: /what is your name|who are you|tell me your name|what's your name|I'm/i,
         responses: [
             "I am your friendly chatbot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
             "You can call me Chatbot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
