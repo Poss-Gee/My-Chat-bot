@@ -8,6 +8,13 @@ const qaPairs = [
         ]
     },
     {
+        pattern:/I'm/i,
+        responses:[
+            "Hello! 👋 Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
+        ]
+
+    },
+    {
         pattern:/I'm fine|I'm great|I'm good|I'm not feeling well|not bad/i,
         responses: [
             "Nice one there! It's great to here that. How can I assist you today?"
@@ -56,9 +63,9 @@ const qaPairs = [
     {
         pattern: /what is your name|who are you|tell me your name|what's your name/i,
         responses: [
-            "I am your friendly chatbot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
-            "You can call me Chatbot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
-            "Hello! I am a chatbot, specifically designed to help you out. Ask away, and I'll do my best to assist!"
+            "I am your friendly Possi Bot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
+            "You can call me Possi Bot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
+            "Hello! I am Possi Bot, specifically designed to help you out. Ask away, and I'll do my best to assist!"
         ]
     },
     {
