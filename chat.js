@@ -22,7 +22,7 @@ responses:[
 ]
 },      
 {
-pattern:/I'm fine|I'm great|I'm good|I'm not feeling well|not bad/i,
+pattern:/fine|great|good|feeling well|not bad/i,
 responses: [
 "Nice one there! It's great to here that. How can I assist you today?"
 ]
