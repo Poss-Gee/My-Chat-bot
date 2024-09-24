@@ -94,7 +94,7 @@ responses: [
 pattern: /how are you/i,
 responses: [
 "I'm doing great, thanks for asking! Since I'm just a bot, I don’t experience emotions like humans, but I’m here and ready to help you!",
-"I'm functioning at my best, and I'm always ready to help you out with whatever you need. How are you doing today?",
+"I'm functioning at my best, and I'm always ready to help you out with whatever you need. What are we doing today?",
 "Thank you for asking! I'm a chatbot, so I’m always feeling good, and I’m excited to assist you. How can I help you today?"
 ]
 },
