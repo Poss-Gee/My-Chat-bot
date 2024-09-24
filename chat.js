@@ -9,6 +9,13 @@ responses: [
 ]
 },
 {
+ pattern:/Christabel/i,
+ responses: [
+  "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
+  
+ ]      
+},
+{
 pattern:/I'm/i,
 responses:[
 "Hello! 👋 Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
