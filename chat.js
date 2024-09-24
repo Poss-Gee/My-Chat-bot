@@ -41,7 +41,7 @@ responses: [
 ]
 },
 {
-pattern: /What's the weather like today|today/i,
+pattern: /What's the weather like today/i,
 responses: [
 "Today's weather is sunny with clear skies and temperatures ranging from a comfortable 28°C to 19°C. A perfect day for some outdoor activities!",
 "It looks like we might have partly cloudy skies today with occasional light showers. Be sure to carry an umbrella if you're heading out!"
