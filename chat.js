@@ -50,8 +50,7 @@ responses: [
 {
 pattern: /Can you tell me a joke|joke/i,
 responses: [
-"Sure! Why don’t skeletons ever fight each other? Well, it's because they don’t have the guts! Classic, right?",
-"Here's a funny one for you: I used to play piano by ear, but now I use my hands. I hope that gave you a chuckle!"
+"Sure!"
 ]
 },
 {
@@ -62,7 +61,7 @@ responses: [
 ]
 },
 {
-pattern: /what is your name|who are you|tell me your name|what's your name/i,
+pattern: /what is your name|who are you|tell me your name|what's your name|about you/i,
 responses: [
 "I am your friendly Possi Bot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
 "You can call me Possi Bot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
