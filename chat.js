@@ -15,11 +15,11 @@ responses:[
 ]
 },
 {
-pattern:/who is Miz Gee!|Mis Gee/i,
+pattern:/who is Miz Gee|Mis Gee|Miz Gee/i,       
 responses:[
-    "Miz Gee is an incredible person—she's my girlfriend and the love of my life. She fills my life with happiness, and I feel truly lucky to have her by my side.",
-    "Miz Gee is someone very special to me. She's not just my girlfriend, but the love of my life—a wonderful person who brings joy and meaning to my world."
-]  
+        "Miz Gee is my creator, Ofori Michael's, girlfriend. She's the love of his life, and he holds her in the highest regard—she means the world to him.",
+        "Miz Gee is the girlfriend of my creator, Ofori Michael. She's not just important to him—she's the love of his life, and he cherishes her deeply."
+]
 },      
 {
 pattern:/I'm fine|I'm great|I'm good|I'm not feeling well|not bad/i,
