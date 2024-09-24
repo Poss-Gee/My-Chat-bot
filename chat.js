@@ -22,7 +22,7 @@ responses: [
 ]
 },
 {
-pattern: /help|support/i,
+pattern: /I need help|support/i,
 response: [
 "Sure, I'm here to help! What do you need assistance with?"
 ]
@@ -112,15 +112,13 @@ responses: [
 {
 pattern: /what time is it now|time/i,
 responses: [
-"Right now, it’s 3:45 PM. If you have other questions or need help, feel free to ask!",
-"The current time is 15:45. Let me know if you'd like me to assist you with anything else."
+"I can't access the current time,  but you can check your device's clock! Let me know if you'd like me to assist you with anything else."
 ]
 },
 {
-pattern: /how many kilometers is 10 miles|kilometers/i,
+pattern: /what is today's date|date/i,
 responses: [
-"10 miles is approximately 16.09 kilometers. It’s always handy to know these conversions, especially when traveling!",
-"In metric terms, 10 miles equals about 16.09 kilometers. Let me know if you need more conversions or have other questions!"
+"I can't access the current date,  but you can check your device's Callander! Let me know if you need more conversions or have other questions!"
 ]
 },
 {
@@ -145,7 +143,7 @@ responses: [
 ]
 },
 {
-pattern: /how do you say hello in Spanish/i,
+pattern: /how do you say hello in Spanish|Spanish/i,
 responses: [
 "'Hello' in Spanish is 'Hola.' It’s a simple and friendly greeting used all over the Spanish-speaking world.",
 "In Spanish, you would say 'Hola' to greet someone. It’s an easy word to remember and a great way to start a conversation!"
