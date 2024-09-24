@@ -169,18 +169,70 @@ responses: [
 ]
 }
 ];
-const defaultResponses = [
-    "Sorry, I didn't understand that. Can you please rephrase?",
-    "Hmm, I'm not sure what you mean. Could you try asking in a different way?",
-    "I didn't quite catch that. Try asking me something else!",
-    "Oops! That went over my head. Can you ask in another way?"
-  ];
 
-  // Return a random default response
-  const randomDefaultIndex = Math.floor(Math.random() * defaultResponses.length);
-  return defaultResponses[randomDefaultIndex];
+function addMessage(message, sender) {
+const chatLog = document.getElementById('chat');
+
+const messageElement = document.createElement('div');
+messageElement.classList.add('message');
+
+if (sender === 'user') {
+messageElement.classList.add('user-message');
+messageElement.innerText = message;
+} else {
+messageElement.classList.add('bot-message');
+messageElement.innerHTML = "<span></span>"; 
+typeWriter(message, messageElement.querySelector('span')); 
 }
 
-// Example test to simulate a conversation
-const userInput = "hello"; // Change this to test different patterns
-console.log(botResponse(userInput)); // This should print the matching response
+chatLog.appendChild(messageElement);
+
+chatLog.scrollTop = chatLog.scrollHeight;
+}
+
+function botResponse(userInput) {
+for (let pair of qaPairs) {
+if (pair.pattern.test(userInput)) {
+
+const randomIndex = Math.floor(Math.random() * pair.responses.length);
+return pair.responses[randomIndex];
+}
+}
+
+return "Sorry, I didn't understand that. Can you please rephrase?";
+}
+
+function typeWriter(text, element, index = 0) {
+if (index < text.length) {
+element.innerHTML += text.charAt(index);
+setTimeout(() => {
+typeWriter(text, element, index + 1);
+}, 50); 
+}
+}
+
+function handleUserInput() {
+const userInput = document.getElementById('userInput').value;
+
+
+if (userInput.trim() !== '') {
+
+addMessage(userInput, 'user');
+
+const botMessage = botResponse(userInput);
+
+setTimeout(() => {
+addMessage(botMessage, 'bot');
+}, 500);
+
+document.getElementById('userInput').value = '';
+}
+}
+
+document.getElementById('sendButton').addEventListener('click', handleUserInput);
+
+document.getElementById('userInput').addEventListener('keypress', function (event) {
+if (event.key === 'Enter') {
+handleUserInput();
+}
+});
