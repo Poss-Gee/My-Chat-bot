@@ -113,3 +113,15 @@ document.getElementById('userInput').addEventListener('keypress', function (even
         handleUserInput();
     }
 });
+
+// View history button to toggle chat history
+document.getElementById('viewHistoryButton').addEventListener('click', function () {
+    const chatLog = document.getElementById('chat');
+    if (chatLog.style.display === 'none' || chatLog.style.display === '') {
+        chatLog.style.display = 'block';
+        document.getElementById('viewHistoryButton').innerText = 'Hide History';
+    } else {
+        chatLog.style.display = 'none';
+        document.getElementById('viewHistoryButton').innerText = 'View History';
+    }
+});
