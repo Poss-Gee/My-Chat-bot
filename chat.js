@@ -199,7 +199,21 @@ return pair.responses[randomIndex];
 }
 }
 
-return "Sorry, I didn't understand that. Can you please rephrase?";
+const defaultResponses = [
+    "Sorry, I didn't understand that. Can you please rephrase?",
+    "Hmm, I'm not sure what you mean. Could you try asking in a different way?",
+    "I didn't quite catch that. Try asking me something else!",
+    "Oops! That went over my head. Can you ask in another way?"
+  ];
+
+  // Return a random default response
+  const randomDefaultIndex = Math.floor(Math.random() * defaultResponses.length);
+  return defaultResponses[randomDefaultIndex];
+}
+
+// Example test to simulate a conversation
+const userInput = "hello"; // Change this to test different patterns
+console.log(botResponse(userInput)); // This should print the matching response
 }
 
 function typeWriter(text, element, index = 0) {
