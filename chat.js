@@ -1,6 +1,6 @@
 const qaPairs = [
     {
-        pattern: /hi|hello|hey/i,
+        pattern: /hi|hello|hey|good morning|goodafternoon|goodevening/i,
         responses: [
             "Hello there! It's great to see you. How can I assist you today?",
             "Hi! I hope you're having a wonderful day. What can I do for you?",
