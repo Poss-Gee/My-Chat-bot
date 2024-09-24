@@ -1,169 +1,89 @@
 const qaPairs = [
 
     {
-
         pattern: /hi|hello|hey|good morning|goodafternoon|goodevening/i,
 
         responses: [
 
             "Hello there! It's great to see you. How can I assist you today?",
-
             "Hi! I hope you're having a wonderful day. What can I do for you?",
-
             "Hey there! Need any help or want to chat about something specific?"
-
         ]
-
     },
-
     {
-
         pattern:/I'm/i,
-
         responses:[
-
             "Hello! 👋 Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
-
         ]
-
-
-
     },
-
     {
-
         pattern:/I'm fine|I'm great|I'm good|I'm not feeling well|not bad/i,
-
         responses: [
-
             "Nice one there! It's great to here that. How can I assist you today?"
-
         ]
-
     },
-
     {
-
         pattern: /help|support/i,
-
-        response: [
-
+        response: [ 
             "Sure, I'm here to help! What do you need assistance with?"
-
         ]
-
     },
-
     {
-
         pattern:/how old are you/i,
-
         responses: [     
-
             "I don’t have an age like humans do, but I’m always fresh and ready to help! What’s on your mind today?",
-
             "I may not have a birthday, but I’m always here to assist you! What can I do for you today?"
-
         ]
-
     },
-
     {
-
         pattern: /What's the weather like today|today/i,
-
         responses: [
-
             "Today's weather is sunny with clear skies and temperatures ranging from a comfortable 28°C to 19°C. A perfect day for some outdoor activities!",
-
             "It looks like we might have partly cloudy skies today with occasional light showers. Be sure to carry an umbrella if you're heading out!"
-
         ]
-
     },
-
     {
-
-        pattern: /How do I reset my password|password/i,
-
+       pattern: /How do I reset my password|password/i,
         responses: [
-
             "To reset your password, simply head to the login page and click on the 'Forgot Password' link. You'll need to enter your email address, and we'll send detailed instructions to help you reset it. Feel free to reach out if you encounter any issues!"
-
         ]
-
     },
-
     {
-
         pattern: /Can you tell me a joke|joke/i,
-
         responses: [
-
             "Sure! Why don’t skeletons ever fight each other? Well, it's because they don’t have the guts! Classic, right?",
-
             "Here's a funny one for you: I used to play piano by ear, but now I use my hands. I hope that gave you a chuckle!"
-
         ]
-
     },
-
     {
-
         pattern: /Who is the president of the United States|US/i,
-
         responses: [
-
-            "As of 2024, the president of the United States is Joe Biden. He has been in office since 2021. Let me know if you'd like to know more about his policies or recent actions.",
-
+           "As of 2024, the president of the United States is Joe Biden. He has been in office since 2021. Let me know if you'd like to know more about his policies or recent actions.",
             "Joe Biden is the current U.S. president, serving his first term since 2021. If you're curious about recent developments or political news, feel free to ask!"
-
         ]
-
     },
-
     {
-
         pattern: /what is your name|who are you|tell me your name|what's your name/i,
-
         responses: [
-
             "I am your friendly Possi Bot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
-
             "You can call me Possi Bot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
-
             "Hello! I am Possi Bot, specifically designed to help you out. Ask away, and I'll do my best to assist!"
-
         ]
-
     },
-
     {
-
         pattern: /who created you|created|desinged|creator|mede/i,
-
         responses: [
-
             "I was developed by Possi Gee, a talented individual who designed me to engage with people and assist in various tasks. Pretty cool, right?",
 
             "Possi Gee is my creator! They put in a lot of work to ensure that I can communicate smoothly and help you with whatever you need.",
-
             "Possi Gee is the mastermind behind my creation. Thanks to their efforts, I am here to assist you with information and conversations!"
-
         ]
-
     },
-
     {
-
         pattern: /how are you/i,
-
         responses: [
-
             "I'm doing great, thanks for asking! Since I'm just a bot, I don’t experience emotions like humans, but I’m here and ready to help you!",
-
             "I'm functioning at my best, and I'm always ready to help you out with whatever you need. How are you doing today?",
-
             "Thank you for asking! I'm a chatbot, so I’m always feeling good, and I’m excited to assist you. How can I help you today?"
 
         ]
