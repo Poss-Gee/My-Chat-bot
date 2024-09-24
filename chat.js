@@ -70,7 +70,7 @@ responses: [
 ]
 },
 {
-pattern: /who created you|created|desinged|creator|mede/i,
+pattern: /who created you|created|desinged|creator|mede|Possi Gee|possigee/i,
 responses: [
 "I was developed by Possi Gee, a talented individual who designed me to engage with people and assist in various tasks. Pretty cool, right?",
 "Possi Gee is my creator! They put in a lot of work to ensure that I can communicate smoothly and help you with whatever you need.",
