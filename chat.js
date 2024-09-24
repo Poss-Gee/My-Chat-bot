@@ -15,10 +15,10 @@ responses:[
 ]
 },
 {
-pattern:/who is Miz Gee|Mis Gee|Miz Gee/i,       
+pattern:/who is Miz Gee|Mis Gee|Miz Gee|girlfriend/i,       
 responses:[
-        "Miz Gee is my creator, Ofori Michael's, girlfriend. She's the love of his life, and he holds her in the highest regard—she means the world to him.",
-        "Miz Gee is the girlfriend of my creator, Ofori Michael. She's not just important to him—she's the love of his life, and he cherishes her deeply."
+        "Miz Gee is my creator, Possi Gee's, girlfriend. She's the love of his life, and he holds her in the highest regard—she means the world to him. (Possi Gee, my creator, wishes to share that he loves you, regardless of the distance. His affection for you remains strong and unchanging).",
+        "Miz Gee is the girlfriend of my creator, Possi Gee. She's not just important to him—she's the love of his life, and he cherishes her deeply. PossiGee, my creator, wants you to know that his love for you is always with you, no matter the distance. It’s a love that stays strong and true)."
 ]
 },      
 {
