@@ -197,7 +197,7 @@ if (pair.pattern.test(userInput)) {
 const randomIndex = Math.floor(Math.random() * pair.responses.length);
 return pair.responses[randomIndex];
 }
-}
+
 
 const defaultResponses = [
     "Sorry, I didn't understand that. Can you please rephrase?",
