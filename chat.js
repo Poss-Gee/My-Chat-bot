@@ -68,7 +68,7 @@ responses: [
 ]
 },
 {
-pattern: /what is your name|tell me your name|what's your name|about you|I want to know you/i,
+pattern: /what is your name|tell me your name|what's your name|about you|I want to know you|who are you/i,
 responses: [
 "I am your friendly Bot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
 "You can call me Possi Bot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
