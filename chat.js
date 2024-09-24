@@ -50,7 +50,8 @@ responses: [
 {
 pattern: /Can you tell me a joke|joke/i,
 responses: [
-"Sure!"
+            "Sure! Why don’t skeletons ever fight each other? Well, it's because they don’t have the guts! Classic, right?",
+            "Here's a funny one for you: I used to play piano by ear, but now I use my hands. I hope that gave you a chuckle!"
 ]
 },
 {
