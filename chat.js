@@ -13,8 +13,14 @@ pattern:/I'm/i,
 responses:[
 "Hello! 👋 Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
 ]
-
 },
+{
+pattern:/who is Miz Gee!|Mis Gee/i,
+responses:[
+    "Miz Gee is an incredible person—she's my girlfriend and the love of my life. She fills my life with happiness, and I feel truly lucky to have her by my side.",
+    "Miz Gee is someone very special to me. She's not just my girlfriend, but the love of my life—a wonderful person who brings joy and meaning to my world."
+]  
+},      
 {
 pattern:/I'm fine|I'm great|I'm good|I'm not feeling well|not bad/i,
 responses: [
