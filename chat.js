@@ -18,7 +18,7 @@ const qaPairs = [
     pattern: /Antoinette/i,
     responses: [
       "She sounds important! Could you tell me more about her?",
-      "Really! who is that one too. Can you tell me more about her. Is she your friend?
+      "Really! who is that one too. Can you tell me more about her. Is she your friend?"
     ]      
   },
   {
