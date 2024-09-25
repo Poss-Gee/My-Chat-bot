@@ -8,7 +8,7 @@ const qaPairs = [
     ]
   },
   {
-    pattern:/game/i,
+    pattern:/game|Game/i,
    responses: [
      "Yes, you can create a game using HTML along with CSS and JavaScript! HTML provides the structure, CSS is used for styling, and JavaScript handles the game logic and interactivity. Some simple games like tic-tac-toe, snake, or memory games are commonly built using these technologies.Here are the basic steps for creating a game using HTML:1. HTML (Structure): Create the game layout, such as the canvas or elements for the game. You can use the <canvas> element for more complex games, or regular divs for simpler ones.2. CSS (Styling): Style the game elements to look appealing, positioning elements and making them interactive.3. JavaScript (Logic): Handle the game’s rules, player movements, win conditions, and interactions using JavaScript. This is where most of the game logic will reside.If you're thinking of creating a basic game, I can help you get started with a simple example. Would you like a template for a specific type of game?"
    ]
