@@ -15,7 +15,7 @@ const qaPairs = [
     ]      
   },
   {
-    pattern: /Antoinette/i,
+    pattern: /Antoinette|Faith|Gloria|Comfort/i,
     responses: [
       "She sounds important! Could you tell me more about her?",
       "Really! who is that one too. Can you tell me more about her. Is she your friend?"
