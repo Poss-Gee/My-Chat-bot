@@ -89,9 +89,9 @@ const qaPairs = [
   {
     pattern: /what is your name|tell me your name|what's your name|about you|I want to know you|who are you/i,
     responses: [
-      "I am your friendly Bot, here to assist you with anything you need! Feel free to ask me any questions you may have.",
-      "You can call me Possi Bot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
-      "Hello! I am Possi Bot, specifically designed to help you out. Ask away, and I'll do my best to assist!"
+      "I am your Geechat, here to assist you with anything you need! Feel free to ask me any questions you may have.",
+      "You can call me PossiBot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
+      "Hello! I am GeeBot, specifically designed to help you out. Ask away, and I'll do my best to assist!"
     ]
   },
   {
