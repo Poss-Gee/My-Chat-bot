@@ -135,7 +135,7 @@ const qaPairs = [
   {
     pattern: /what is today's date|date/i,
     responses: [
-     "I can't access the current date,  but you can check your device's Callander! Let me know if you need more conversions or have other questions!"
+     "I can't access the current date,  but you can check your device's Calander! Let me know if you need more conversions or have other questions!"
     ]
   },
   {
@@ -149,7 +149,7 @@ const qaPairs = [
     pattern: /how tall is Mount Everest/i,
     responses: [
       "Mount Everest is 8,848.86 meters (29,031.7 feet) tall, making it the highest point on Earth. Quite an amazing natural wonder!",
-      "Standing at 8,848 meters, Mount Everest is the tallest mountain in the world. It’s a dream for many mountaineers to climb!
+      "Standing at 8,848 meters, Mount Everest is the tallest mountain in the world. It’s a dream for many mountaineers to climb!"
     ]
   },
   {
