@@ -18,7 +18,7 @@ const qaPairs =[
     responses: [
       "You can him Possi Gee, the mastermind behind my creation. Thanks to his efforts, I am here to assist you with information and conversations!"
     ]
-  }
+  }, 
   {
     pattern: /Christabel/i,
     responses: [
