@@ -14,6 +14,12 @@ const qaPairs =[
    ]
   },
   {
+    pattern:/Ofori Michael|Ofori|Michael/i,
+    responses: [
+      "You can him Possi Gee, the mastermind behind my creation. Thanks to his efforts, I am here to assist you with information and conversations!"
+    ]
+  }
+  {
     pattern: /Christabel/i,
     responses: [
       "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
