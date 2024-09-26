@@ -1,4 +1,4 @@
-const qaPairs = [
+const qaPairs =[
   {
     pattern: /hi|hello|hey|good morning|goodafternoon|goodevening/i,
     responses: [
