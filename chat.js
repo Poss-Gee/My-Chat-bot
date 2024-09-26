@@ -17,7 +17,7 @@ const qaPairs =[
     pattern:/Ofori Michael|Ofori|Michael/i,
     responses: [
       "You may call him Michael Ofori, but I refer to him as Possi Gee, the creative force behind my invention. I am able to provide you with information and help with chats because of his hard work!",
-      ""
+      "Though he goes by Michael Ofori, I nickname him Possi Gee, the inspiration behind my creation. His diligence has allowed me to be able to assist you with chats and supply you information!"
     ]
   }, 
   {
