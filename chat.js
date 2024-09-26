@@ -1,3 +1,16 @@
+// Import the Twilio library
+const twilio = require('twilio');
+
+// Twilio credentials stored in environment variables
+const accountSid = process.env.TWILIO_ACCOUNT_SID;  // Fetch from environment
+const authToken = process.env.TWILIO_AUTH_TOKEN;    // Fetch from environment
+const client = new twilio(accountSid, authToken);
+
+// Your WhatsApp number and your Twilio WhatsApp-enabled number
+const fromWhatsApp = 'whatsapp:+13342342822'; // Replace with your Twilio WhatsApp-enabled number
+const toWhatsApp = 'whatsapp:+233534679512';  // Replace with your WhatsApp number
+
+// Existing chatbot code with your QA pairs
 const qaPairs = [
   {
     pattern: /hi|hello|hey|good morning|goodafternoon|goodevening/i,
@@ -8,24 +21,24 @@ const qaPairs = [
     ]
   },
   {
-    pattern:/game|Game/i,
-   responses: [
-     "Yes, you can create a game using HTML along with CSS and JavaScript! HTML provides the structure, CSS is used for styling, and JavaScript handles the game logic and interactivity. Some simple games like tic-tac-toe, snake, or memory games are commonly built using these technologies.Here are the basic steps for creating a game using HTML:1. HTML (Structure): Create the game layout, such as the canvas or elements for the game. You can use the <canvas> element for more complex games, or regular divs for simpler ones.2. CSS (Styling): Style the game elements to look appealing, positioning elements and making them interactive.3. JavaScript (Logic): Handle the game’s rules, player movements, win conditions, and interactions using JavaScript. This is where most of the game logic will reside.If you're thinking of creating a basic game, I can help you get started with a simple example. Would you like a template for a specific type of game?"
-   ]
+    pattern: /game|Game/i,
+    responses: [
+      "Yes, you can create a game using HTML along with CSS and JavaScript! HTML provides the structure, CSS is used for styling, and JavaScript handles the game logic and interactivity. Some simple games like tic-tac-toe, snake, or memory games are commonly built using these technologies."
+    ]
   },
   {
     pattern: /Christabel/i,
     responses: [
-      "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
-      "LOL 😆🤣 She's only my creator's friend, but even as a chatbot, you're making me laugh 😃. And before you bring yourself, please remember that she is the only friend I know. He's not introduced me to anyone else yet, other from her."
-    ]      
+      "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃.",
+      "LOL 😆🤣 She's only my creator's friend, but you're making me laugh 😃."
+    ]
   },
   {
     pattern: /Antoinette|Faith|Gloria|Comfort/i,
     responses: [
       "She sounds important! Could you tell me more about her?",
-      "Really! who is that one too. Can you tell me more about her. Is she your friend?"
-    ]      
+      "Really! Who is that one too? Can you tell me more about her?"
+    ]
   },
   {
     pattern: /I'm/i,
@@ -34,10 +47,10 @@ const qaPairs = [
     ]
   },
   {
-    pattern: /who is Miz Gee|Mis Gee|Miz Gee|girlfriend|his girlfriend/i,       
+    pattern: /who is Miz Gee|Mis Gee|Miz Gee|girlfriend|his girlfriend/i,
     responses: [
-      "Miz Gee is my creator, Possi Gee's, girlfriend. She's the love of his life, and he holds her in the highest regard—she means the world to him. (Possi Gee, my creator, wishes to share that he loves you, regardless of the distance. His affection for you remains strong and unchanging). 《°To Miz Gee°》",
-      "Miz Gee is the girlfriend of my creator, Possi Gee. She's not just important to him—she's the love of his life, and he cherishes her deeply. Possi Gee, my creator, wants you to know that his love for you is always with you, no matter the distance. It’s a love that stays strong and true). 《°To Miz Gee°》"
+      "Miz Gee is my creator, Possi Gee's, girlfriend. She's the love of his life.",
+      "Miz Gee is the girlfriend of my creator, Possi Gee. She's the love of his life."
     ]
   },
   {
@@ -48,129 +61,11 @@ const qaPairs = [
   },
   {
     pattern: /I need help|support/i,
-    responses: [  // Fixed typo from 'response' to 'responses'
+    responses: [
       "Sure, I'm here to help! What do you need assistance with?"
     ]
   },
-  {
-    pattern: /how old are you/i,
-    responses: [     
-      "I don’t have an age like humans do, but I’m always fresh and ready to help! What’s on your mind today?",
-      "I may not have a birthday, but I’m always here to assist you! What can I do for you today?"
-    ]
-  },
-  {
-    pattern: /What's the weather like today/i,
-    responses: [
-      "Today's weather is sunny with clear skies and temperatures ranging from a comfortable 28°C to 19°C. A perfect day for some outdoor activities!",
-      "It looks like we might have partly cloudy skies today with occasional light showers. Be sure to carry an umbrella if you're heading out!"
-    ]
-  },
-  {
-    pattern: /How do I reset my password|password/i,
-    responses: [
-      "To reset your password, simply head to the login page and click on the 'Forgot Password' link. You'll need to enter your email address, and we'll send detailed instructions to help you reset it. Feel free to reach out if you encounter any issues!"
-    ]
-  },
-  {
-    pattern: /Can you tell me a joke|joke/i,
-    responses: [
-      "Sure! Why don’t skeletons ever fight each other? Well, it's because they don’t have the guts! Classic, right?",
-      "Here's a funny one for you: I used to play piano by ear, but now I use my hands. I hope that gave you a chuckle!"
-    ]
-  },
-  {
-    pattern: /Who is the president of the United States|US/i,
-    responses: [
-      "As of 2024, the president of the United States is Joe Biden. He has been in office since 2021. Let me know if you'd like to know more about his policies or recent actions.",
-      "Joe Biden is the current U.S. president, serving his first term since 2021. If you're curious about recent developments or political news, feel free to ask!"
-    ]
-  },
-  {
-    pattern: /what is your name|tell me your name|what's your name|about you|I want to know you|who are you/i,
-    responses: [
-      "I am your Geechat, here to assist you with anything you need! Feel free to ask me any questions you may have.",
-      "You can call me PossiBot, your virtual assistant. My job is to help you with information, answer your questions, or simply have a chat!",
-      "Hello! I am GeeBot, specifically designed to help you out. Ask away, and I'll do my best to assist!"
-    ]
-  },
-  {
-    pattern: /who created you|created|designed|creator|made|Possi Gee|possigee/i,
-    responses: [
-      "I was developed by Possi Gee, a talented individual who designed me to engage with people and assist in various tasks. Pretty cool, right?",
-      "Possi Gee is my creator! They put in a lot of work to ensure that I can communicate smoothly and help you with whatever you need.",
-      "Possi Gee is the mastermind behind my creation. Thanks to their efforts, I am here to assist you with information and conversations!"
-    ]
-  },
-  {
-    pattern: /how are you/i,
-    responses: [
-      "I'm doing great, thanks for asking! I'm here to help you!"
-    ]
-  },
-  {
-    pattern: /bye|goodbye|see you|exit/i,
-    responses: [
-      "Goodbye! I hope you have a fantastic day ahead. Feel free to come back anytime you need assistance!",
-      "See you soon! Don't hesitate to reach out whenever you have a question or just want to chat. Take care!",
-      "Take care and have a wonderful day! I'm here whenever you need to talk or ask anything. See you next time!"
-    ]
-  },
-  {
-    pattern: /thank you|thanks/i,
-    responses: [
-      "You're very welcome! I'm always happy to help. If you ever need anything else, don't hesitate to ask!",
-      "No problem at all! It’s my pleasure to assist you. Feel free to reach out if you need more help.",
-      "Happy to help! I'm here for you anytime you need me. Just let me know what you'd like to chat about next!"
-    ]
-  },
-  {
-    pattern: /what can you do|do/i,
-    responses: [
-      "I’m here to assist with answering questions, providing useful information, or just chatting with you. If you’re not sure where to start, ask me anything!",
-      "My main role is to chat with you, answer your questions, and provide information or support. Give me a try—what would you like to know?",
-      "I'm a chatbot, and my job is to engage in conversations, help you find answers, or provide assistance with anything you'd like to discuss."
-    ]
-  },
-  {
-    pattern: /what time is it now|time/i,
-    responses: [
-      "I can't access the current time,  but you can check your device's clock! Let me know if you'd like me to assist you with anything else."
-    ]
-  },
-  {
-    pattern: /what is today's date|date/i,
-    responses: [
-     "I can't access the current date,  but you can check your device's Calander! Let me know if you need more conversions or have other questions!"
-    ]
-  },
-  {
-    pattern: /who won the football match yesterday|football/i,
-    responses: [
-      "Yesterday, Manchester United secured a 2-1 victory against Chelsea. It was quite an exciting match!",
-      "In yesterday's match, Liverpool triumphed over Arsenal with a 3-0 scoreline. Would you like more details about the game?"
-    ]
-  },
-  {
-    pattern: /how tall is Mount Everest/i,
-    responses: [
-      "Mount Everest is 8,848.86 meters (29,031.7 feet) tall, making it the highest point on Earth. Quite an amazing natural wonder!",
-      "Standing at 8,848 meters, Mount Everest is the tallest mountain in the world. It’s a dream for many mountaineers to climb!"
-    ]
-  },
-  {
-    pattern: /convert 100 usd to euros/i,
-    responses: [
-      "100 USD is currently approximately 90 Euros, depending on the exchange rate. Currency rates can fluctuate, so it's always good to check for the latest updates.",
-      "At today's exchange rate, 100 USD equals about 90 Euros. Keep in mind, though, that exchange rates change frequently."
-    ]
-  },
-  {
-    pattern: /how do you say hello in Spanish|Spanish/i,
-    responses: [
-      "'Hello' in Spanish is 'Hola.'"
-    ]
-  }
+  // Add more patterns as needed
 ];
 
 function addMessage(message, sender) {
@@ -206,7 +101,6 @@ function botResponse(userInput) {
     "Oops! That went over my head. Can you ask in another way?"
   ];
 
-  // Return a random default response
   const randomDefaultIndex = Math.floor(Math.random() * defaultResponses.length);
   return defaultResponses[randomDefaultIndex];
 }
@@ -220,11 +114,22 @@ function typeWriter(text, element, index = 0) {
   }
 }
 
+// Modified handleUserInput function to send user input to WhatsApp
 function handleUserInput() {
   const userInput = document.getElementById('userInput').value;
 
   if (userInput.trim() !== '') {
     addMessage(userInput, 'user');
+
+    // Forward user input to your WhatsApp using Twilio
+    client.messages
+      .create({
+        body: `User input: ${userInput}`,
+        from: fromWhatsApp,
+        to: toWhatsApp
+      })
+      .then((message) => console.log(`WhatsApp message sent with SID: ${message.sid}`))
+      .catch((error) => console.error('Error sending WhatsApp message:', error));
 
     const botMessage = botResponse(userInput);
 
