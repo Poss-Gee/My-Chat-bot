@@ -48,7 +48,7 @@ const qaPairs =[
     ]
   },
   {
-    pattern: /fine|great|good|feeling well|not bad/i,
+    pattern: /fine|great|feeling well|not bad/i,
     responses: [
       "Nice one there! It's great to hear that. How can I assist you today?"
     ]
