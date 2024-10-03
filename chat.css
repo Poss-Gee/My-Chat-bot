@@ -5,7 +5,8 @@
 }
 
 #chat-container {
-    width: 500px;
+    width: 550px;
+    height: 800px;
     max-width: 90%;
     margin: 10px auto;
     background-color: #f9f9f9;
