@@ -5,8 +5,8 @@
 }
 
 #chat-container {
-    width: 550px;
-    height: 800px;
+    width: 600px;
+    height: 700px;
     max-width: 90%;
     margin: 10px auto;
     background-color: #f9f9f9;
@@ -86,6 +86,7 @@
     display: flex;
     align-items: center;
     padding: 10px 0;
+    position: bottom;
 }
 
 #userInput {
