@@ -86,15 +86,13 @@
 #controls {
     display: flex;
     align-items: center;
-    padding: 10px;
-    margin-top: 10px;
-    background-color: #f9f9f9; /* Ensure it matches the chat background */
-    border-top: 1px solid #ddd; /* To separate chat area and input area */
-    border-radius: 0 0 10px 10px; /* To blend with the container's bottom */
+    padding: 10px 0;
+    background-color: #f9f9f9; /* Same background as container */
+    border-top: 1px solid #ddd; /* Optional: separate chat and controls */
 }
 
 #userInput {
-    flex: 1;
+    flex-grow: 1; /* Take up available space */
     padding: 10px;
     border: 1px solid #ddd;
     border-radius: 20px;
@@ -103,20 +101,20 @@
 }
 
 #sendButton, #voiceButton {
-    margin-left: 10px; /* Add some space between the input and buttons */
-    padding: 10px;
+    width: 40px; /* Set fixed size for button */
+    height: 40px; /* Make the button circular */
+    margin-left: 10px; /* Space between input and buttons */
+    padding: 0;
     border: none;
-    border-radius: 50%;
+    border-radius: 50%; /* Circular button */
     background-color: #007bff;
     color: white;
     cursor: pointer;
     font-size: 18px;
-    transition: background-color 0.3s;
-    width: 40px; /* Ensures button is circular and properly sized */
-    height: 40px; /* Ensures button is circular and properly sized */
     display: flex;
     align-items: center;
-    justify-content: center; /* Centers the icon inside the button */
+    justify-content: center;
+    transition: background-color 0.3s;
 }
 
 #sendButton:hover, #voiceButton:hover {
