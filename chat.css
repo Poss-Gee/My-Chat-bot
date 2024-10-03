@@ -94,6 +94,7 @@
     border-radius: 20px;
     outline: none;
     font-size: 16px;
+    max-width: 80%;
 }
 
 #sendButton, #voiceButton {
