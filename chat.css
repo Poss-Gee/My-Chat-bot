@@ -101,16 +101,17 @@
 }
 
 #sendButton, #voiceButton {
-    width: 60px; /* Set fixed size for button */
-    height: 60px; /* Make the button circular */
-    margin-left: 10px; /* Space between input and buttons */
+    width: 40px; /* Set fixed size for button */
+    height: 40px;/* Make the button circular */
     padding: 5px 5px;
+    margin-left: 10px; /* Space between input and buttons */
+    padding: 0;
     border: none;
     border-radius: 50%; /* Circular button */
     background-color: #007bff;
     color: white;
     cursor: pointer;
-    font-size: 30px;
+    font-size: 18px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -136,4 +137,4 @@
 
 #chat::-webkit-scrollbar-thumb:hover {
     background: #bbb;
-}
+    }
