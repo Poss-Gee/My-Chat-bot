@@ -104,7 +104,7 @@
     width: 60px; /* Set fixed size for button */
     height: 60px; /* Make the button circular */
     margin-left: 10px; /* Space between input and buttons */
-    padding: 10px 10px;
+    padding: 5px 5px;
     border: none;
     border-radius: 50%; /* Circular button */
     background-color: #007bff;
