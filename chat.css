@@ -101,8 +101,8 @@
 }
 
 #sendButton, #voiceButton {
-    width: 50px; /* Set fixed size for button */
-    height: 50px; /* Make the button circular */
+    width: 30px; /* Set fixed size for button */
+    height: 30px; /* Make the button circular */
     margin-left: 10px; /* Space between input and buttons */
     padding: 0;
     border: none;
