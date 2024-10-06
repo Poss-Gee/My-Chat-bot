@@ -1,8 +1,3 @@
-// Memory to store user details
-        const memory = {
-            name: null,
-            otherDetails: null
-        };
 const qaPairs = [
     {
         pattern: /hi|hello|hey|good morning|goodafternoon|goodevening/i,
@@ -12,48 +7,18 @@ const qaPairs = [
             "Hey there! Need any help or want to chat about something specific?"
         ]
     },
-        {
-          pattern:/Possi Gee's number|yournumber/i,
-          responses:[
-                  "PossiGee's contact information is as follows: 0556814924, 0509349675, and 0534679512. I am a chatbot and do not possess a phone number. Need any help or want to chat about something specific?",
-                  "You can reach PossiGee at these numbers: 0556814924, 0509349675, 0534679512. Unfortunately, I am a chatbot and do not have a physical number. What again do you need assistance with?"
-                  ]
-        },
-    {
-        pattern: /my name is (\w+)/i,
-        responses: (match) => {
-            memory.name = match[1];
-            return Nice to meet you, ${memory.name}! How can I assist you today?;
-        }
-    },
-    {
-        pattern: /what is my name|do you remember my name/i,
-        responses: () => {
-            if (memory.name) {
-                return Your name is ${memory.name}. How can I help you?;
-            } else {
-                return "I don't know your name yet. Please tell me by saying 'My name is [your name]'.";
-            }
-        }
-    },
     {
         pattern: /importance of chatbots|why are chatbots important|benefits of chatbots|chatbots importance/i,
         responses: [
-            "Here are four important benefits of chatbots:<br><br>1. <strong>24/7 Availability</strong>: Chatbots can provide instant customer service and support at any time of the day.<br><br>2. <strong>Cost-Efficiency</strong>: They reduce the need for a large customer support team, thus cutting costs for businesses.<br><br>3. <strong>Instant Responses</strong>: Chatbots can respond to multiple customers simultaneously, improving efficiency and satisfaction.<br><br>4. <strong>Consistent Responses</strong>: They deliver consistent answers without error or emotion, ensuring that every customer gets the same high level of service."
+            
         ]
     },
     {
-    pattern: /how to 3d game|create 3d game|3d game development/i,
-    responses: [
-        "Creating a 3D game can be a challenging but rewarding process! Here are some general steps to get started:",
-        "1. *Choose a Game Engine*: Popular choices include Unity, Unreal Engine, and Godot. These engines have built-in 3D capabilities and can simplify game development.",
-        "2. *Learn 3D Modeling*: You can use software like Blender or Autodesk Maya to create 3D assets. There are many tutorials online to help you get started.",
-        "3. *Learn Programming*: C# is commonly used with Unity, while C++ is used for Unreal Engine. Familiarize yourself with the engine’s scripting language.",
-        "4. *Create Game Mechanics*: This involves coding how the game behaves—character movement, camera controls, interactions, etc.",
-        "5. *Test and Optimize*: Test your game regularly, fixing bugs and optimizing performance to make it run smoothly.",
-        "There are many tutorials available online, or you can find courses on platforms like Udemy, Coursera, or YouTube to dive deeper!"
-    ]
-    },
+        pattern:/game|Game/i,
+       responses: [
+
+       ]
+      },
       {
         pattern:/Ofori Michael|Ofori|Michael/i,
         responses: [
@@ -96,7 +61,7 @@ const qaPairs = [
       },
       {
         pattern: /I need help|support/i,
-        responses: [ 
+        responses: [  // Fixed typo from 'response' to 'responses'
           "Sure, I'm here to help! What do you need assistance with?"
         ]
       },
@@ -219,6 +184,7 @@ const qaPairs = [
           "'Hello' in Spanish is 'Hola.'"
         ]
       }
+    // Add more QA pairs as needed...
 ];
 
 function addMessage(message, sender) {
@@ -234,36 +200,32 @@ function addMessage(message, sender) {
         messageWrapper.appendChild(messageElement);
     } else {
         messageWrapper.classList.add('bot-message-wrapper');
-
+        
+        // Smart toy icon outside the bubble
         const smartToyIcon = document.createElement('span');
         smartToyIcon.classList.add('material-icons', 'smart-toy-icon');
         smartToyIcon.innerText = 'smart_toy';
 
         const messageElement = document.createElement('div');
         messageElement.classList.add('message', 'bot-message');
-        messageElement.innerHTML = <span class="thinking">Thinking...</span>;
-
-        messageWrapper.appendChild(smartToyIcon);
+        messageElement.innerHTML = `<span class="thinking">Thinking ▣▣▣</span>`;
+        
+        messageWrapper.appendChild(smartToyIcon); // Add smart toy icon first
         messageWrapper.appendChild(messageElement);
 
         const botSpan = messageElement.querySelector('span');
         setTimeout(() => {
-            typeWriter(message, messageElement); 
-        }, 1000); 
+            typeWriter(message, messageElement); // Pass the message element to typeWriter
+        }, 1000); // 1 second delay for "thinking..."
     }
 
     chatLog.appendChild(messageWrapper);
-
-
     chatLog.scrollTop = chatLog.scrollHeight;
 }
 
 function botResponse(userInput) {
     for (let pair of qaPairs) {
         if (pair.pattern.test(userInput)) {
-            if (typeof pair.responses === 'function') {
-                return pair.responses(userInput.match(pair.pattern));
-            }
             const randomIndex = Math.floor(Math.random() * pair.responses.length);
             return pair.responses[randomIndex];
         }
@@ -282,20 +244,22 @@ function botResponse(userInput) {
 
 function typeWriter(text, element, index = 0) {
     const span = element.querySelector('.thinking');
+    
     if (span) {
-        span.remove();  
+        span.remove();  // Remove "thinking..." when typing starts
     }
 
     if (index < text.length) {
         element.innerHTML += text.charAt(index);
         setTimeout(() => {
             typeWriter(text, element, index + 1);
-        }, 50); 
+        }, 50); // Typing speed
     }
 }
 
 function handleUserInput() {
     const userInput = document.getElementById('userInput').value.trim();
+
     if (userInput !== '') {
         addMessage(userInput, 'user');
 
@@ -303,53 +267,17 @@ function handleUserInput() {
 
         setTimeout(() => {
             addMessage(botMessage, 'bot');
-        }, 500); 
+        }, 500); // Delay before bot responds
 
         document.getElementById('userInput').value = '';
     }
 }
 
-function speakText(text) {
-    const synth = window.speechSynthesis;
-    const utterance = new SpeechSynthesisUtterance(text);
-    utterance.voice = synth.getVoices().find(voice => voice.name.includes('Google UK English Female')); // Optional: Customize voice
-    synth.speak(utterance);
-}
-
-function startVoiceRecognition() {
-    const recognition = new (window.SpeechRecognition || window.webkitSpeechRecognition)();
-    recognition.lang = 'en-US';
-    recognition.interimResults = false;
-    recognition.maxAlternatives = 1;
-
-    recognition.start();
-
-    recognition.onresult = (event) => {
-        const userInput = event.results[0][0].transcript;
-        addMessage(userInput, 'user');
-
-        const botMessage = botResponse(userInput);
-        
-        setTimeout(() => {
-            addMessage(botMessage, 'bot');
-            speakText(botMessage);
-        }, 500); 
-    };
-
-    recognition.onerror = (event) => {
-        console.error('Speech recognition error: ' + event.error);
-    };
-}
-
-
 document.getElementById('sendButton').addEventListener('click', handleUserInput);
+
 document.getElementById('userInput').addEventListener('keypress', function (event) {
     if (event.key === 'Enter') {
         handleUserInput();
     }
 });
 
-chat.scrollTop = chat.scrollHeight;
-
-// Handling voice input
-document.getElementById('voiceButton').addEventListener('click', startVoiceRecognition);
