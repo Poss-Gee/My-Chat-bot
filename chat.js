@@ -222,7 +222,7 @@ function addMessage(message, sender) {
 
         const messageElement = document.createElement('div');
         messageElement.classList.add('message', 'bot-message');
-        messageElement.innerHTML = `<span class="thinking">Thinking ▣▣▣</span>`;
+        messageElement.innerHTML = `<span class="thinking">Thinking...</span>`;
         
         messageWrapper.appendChild(smartToyIcon); // Add smart toy icon first
         messageWrapper.appendChild(messageElement);
