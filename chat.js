@@ -15,8 +15,8 @@ const qaPairs = [
         {
           pattern:/Possi Gee's number/i,
           responses:[
-                  "PossiGee's contact information is as follows: 0556814924, 0509349675, and 0534679512. I am a chatbot and do not possess a phone number.",
-                  "You can reach PossiGee at these numbers: 0556814924, 0509349675, 0534679512. Unfortunately, I am a chatbot and do not have a physical number"
+                  "PossiGee's contact information is as follows: 0556814924, 0509349675, and 0534679512. I am a chatbot and do not possess a phone number. Need any help or want to chat about something specific?",
+                  "You can reach PossiGee at these numbers: 0556814924, 0509349675, 0534679512. Unfortunately, I am a chatbot and do not have a physical number. What again do you need assistance with?"
                   ]
         },
     {
