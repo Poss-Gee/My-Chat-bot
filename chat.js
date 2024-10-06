@@ -41,13 +41,6 @@ const qaPairs = [
         ]
       }, 
       {
-        pattern: /0530334303/i,
-        responses: [
-          "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
-          "LOL 😆🤣 She's only my creator's friend, but even as a chatbot, you're making me laugh 😃. And before you bring yourself, please remember that she is the only friend I know. He's not introduced me to anyone else yet, other from her."
-        ]      
-      },
-      {
         pattern: /Antoinette|Faith|Gloria|Comfort/i,
         responses: [
           "She sounds important! Could you tell me more about her?",
@@ -55,7 +48,7 @@ const qaPairs = [
         ]      
       },
       {
-        pattern: /I'm/i,
+        pattern: /p/i,
         responses: [
           "Hello! 👋 Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
         ]
