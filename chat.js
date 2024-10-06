@@ -63,7 +63,7 @@ const qaPairs = [
       }, 
       {
         pattern:/0530334303|0530 334 303|0 5 3 0 3 3 4 3 0 3|0530 334303/i,
-        responses: [
+        responses:[
           "Christabel, sometimes it can be easy to overlook the depth of a friendship when we’re caught up in daily life, but Michael truly sees you as much more than just a friend—you're his bestie, someone incredibly special. He values the bond you share, and the way you’ve been there for him means a lot to him. Try to see the friendship from his perspective: someone who genuinely treasures your presence, trusts you, and appreciates everything about your connection. Sometimes, all it takes is recognizing the love and loyalty in the little things to understand how deeply someone values you.", 
           "Christabel, sometimes we don’t realize how deeply someone values us until we see things from their perspective. Michael sees you as more than just a friend—you're his bestie, someone he truly cherishes. He appreciates the bond you both share, the support you’ve shown, and the moments that make your connection special. From his point of view, you’re a key part of his life, someone he trusts and respects deeply. Take a moment to see the friendship as he does: filled with love, loyalty, and appreciation. You mean more to him than you might realize."
         ]      
