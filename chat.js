@@ -43,11 +43,17 @@ const qaPairs = [
         ]
     },
     {
-        pattern:/game|Game/i,
-       responses: [
-
-       ]
-      },
+    pattern: /how to 3d game|create 3d game|3d game development/i,
+    responses: [
+        "Creating a 3D game can be a challenging but rewarding process! Here are some general steps to get started:",
+        "1. **Choose a Game Engine**: Popular choices include Unity, Unreal Engine, and Godot. These engines have built-in 3D capabilities and can simplify game development.",
+        "2. **Learn 3D Modeling**: You can use software like Blender or Autodesk Maya to create 3D assets. There are many tutorials online to help you get started.",
+        "3. **Learn Programming**: C# is commonly used with Unity, while C++ is used for Unreal Engine. Familiarize yourself with the engine’s scripting language.",
+        "4. **Create Game Mechanics**: This involves coding how the game behaves—character movement, camera controls, interactions, etc.",
+        "5. **Test and Optimize**: Test your game regularly, fixing bugs and optimizing performance to make it run smoothly.",
+        "There are many tutorials available online, or you can find courses on platforms like Udemy, Coursera, or YouTube to dive deeper!"
+    ]
+    },
       {
         pattern:/Ofori Michael|Ofori|Michael/i,
         responses: [
