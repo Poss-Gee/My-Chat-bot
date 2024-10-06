@@ -66,7 +66,7 @@ responses: [
     ]      
   },
   {
-    pattern: /o/i,
+    pattern: /fooling/i,
     responses: [
       "Hello! Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
     ]
