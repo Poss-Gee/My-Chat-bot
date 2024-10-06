@@ -1,4 +1,4 @@
-        // Memory to store user details
+// Memory to store user details
         const memory = {
             name: null,
             otherDetails: null
@@ -83,7 +83,7 @@ const qaPairs = [
         ]      
       },
       {
-        pattern: /I'm/i,
+        pattern: //i,
         responses: [
           "Hello! 👋 Welcome to our chat! I'm Possi Bot, your virtual assistant. How can I help you today?"
         ]
