@@ -12,6 +12,12 @@ const qaPairs = [
             "Hey there! Need any help or want to chat about something specific?"
         ]
     },
+        {
+          pattern:/Possi Gee's number/i,
+          responses:[
+                  "0556814924, 0509349675, 0534679512, you can contactjim right now"
+                  ]
+        },
     {
         pattern: /my name is (\w+)/i,
         responses: (match) => {
