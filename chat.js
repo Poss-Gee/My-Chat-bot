@@ -13,7 +13,7 @@ const qaPairs = [
         ]
     },
         {
-          pattern:/Possi Gee's number/i,
+          pattern:/Possi Gee's number|yournumber/i,
           responses:[
                   "PossiGee's contact information is as follows: 0556814924, 0509349675, and 0534679512. I am a chatbot and do not possess a phone number. Need any help or want to chat about something specific?",
                   "You can reach PossiGee at these numbers: 0556814924, 0509349675, 0534679512. Unfortunately, I am a chatbot and do not have a physical number. What again do you need assistance with?"
@@ -39,7 +39,7 @@ const qaPairs = [
     {
         pattern: /importance of chatbots|why are chatbots important|benefits of chatbots|chatbots importance/i,
         responses: [
-            
+            "Here are four important benefits of chatbots:<br><br>1. <strong>24/7 Availability</strong>: Chatbots can provide instant customer service and support at any time of the day.<br><br>2. <strong>Cost-Efficiency</strong>: They reduce the need for a large customer support team, thus cutting costs for businesses.<br><br>3. <strong>Instant Responses</strong>: Chatbots can respond to multiple customers simultaneously, improving efficiency and satisfaction.<br><br>4. <strong>Consistent Responses</strong>: They deliver consistent answers without error or emotion, ensuring that every customer gets the same high level of service."
         ]
     },
     {
