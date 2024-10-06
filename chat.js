@@ -15,7 +15,7 @@ const qaPairs = [
         {
           pattern:/Possi Gee's number/i,
           responses:[
-                  "0556814924, 0509349675, 0534679512, you can contactjim right now"
+                  "0556814924, 0509349675, 0534679512, you can contact him right now that's PossiGee's number"
                   ]
         },
     {
