@@ -64,10 +64,17 @@ const qaPairs = [
       {
         pattern: /0530334303/i,
         responses: [
-          "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
-          "LOL 😆🤣 She's only my creator's friend, but even as a chatbot, you're making me laugh 😃. And before you bring yourself, please remember that she is the only friend I know. He's not introduced me to anyone else yet, other from her."
+          "Christabel, sometimes it can be easy to overlook the depth of a friendship when we’re caught up in daily life, but Michael truly sees you as much more than just a friend—you're his bestie, someone incredibly special. He values the bond you share, and the way you’ve been there for him means a lot to him. Try to see the friendship from his perspective: someone who genuinely treasures your presence, trusts you, and appreciates everything about your connection. Sometimes, all it takes is recognizing the love and loyalty in the little things to understand how deeply someone values you.", 
+          "Christabel, sometimes we don’t realize how deeply someone values us until we see things from their perspective. Michael sees you as more than just a friend—you're his bestie, someone he truly cherishes. He appreciates the bond you both share, the support you’ve shown, and the moments that make your connection special. From his point of view, you’re a key part of his life, someone he trusts and respects deeply. Take a moment to see the friendship as he does: filled with love, loyalty, and appreciation. You mean more to him than you might realize."
         ]      
       },
+        {
+        pattern:/Christabel/i,
+        responses:[
+            "Christabel, Your name is familiar to me. I was just introduced to you by my supervisor, who even asked me to share this with you. To make sure I'm providing the correct person with the information, I would like you to verify a security tip. It's very simple, just enter your phone number",
+            "Christabel, I’ve heard your name before. My boss introduced you to me not long ago, and he even asked me to convey this message to you. I would like you to confirm a security tip so I can be sure I’m giving the information to the right person. it's very simple, just enter your phone number"
+        ]      
+        },
       {
         pattern: /Antoinette|Faith|Gloria|Comfort/i,
         responses: [
