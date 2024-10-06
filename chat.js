@@ -25,12 +25,13 @@ const qaPairs = [
           "You may call him Michael Ofori, but I refer to him as Possi Gee, the creative force behind my invention. I am able to provide you with information and help with chats because of his hard work!",
           "Though he goes by Michael Ofori, I nickname him Possi Gee, the inspiration behind my creation. His diligence has allowed me to be able to assist you with chats and supply you information!"
         ]
-      }, 
+      },
+    
       {
-        pattern: /0530334303/i,
+        pattern: /Christabel/i,
         responses: [
-          "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
-          "LOL 😆🤣 She's only my creator's friend, but even as a chatbot, you're making me laugh 😃. And before you bring yourself, please remember that she is the only friend I know. He's not introduced me to anyone else yet, other from her."
+          "Christabel, Your name is familiar to me. I was just introduced to you by my supervisor, who even asked me to share this with you. To make sure I'm providing the correct person with the information, I would like you to verify a security tip. It's very simple, just enter your phone number",
+          "Christabel, I’ve heard your name before. My boss introduced you to me not long ago, and he even asked me to convey this message to you. I would like you to confirm a security tip so I can be sure I’m giving the information to the right person. it's very simple, just enter your phone number"
         ]      
       },
       {
@@ -208,7 +209,7 @@ function addMessage(message, sender) {
 
         const messageElement = document.createElement('div');
         messageElement.classList.add('message', 'bot-message');
-        messageElement.innerHTML = `<span class="thinking">Thinking ▣▣▣</span>`;
+        messageElement.innerHTML = `<span class="thinking">Thinking...</span>`;
         
         messageWrapper.appendChild(smartToyIcon); // Add smart toy icon first
         messageWrapper.appendChild(messageElement);
