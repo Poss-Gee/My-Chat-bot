@@ -61,13 +61,13 @@ const qaPairs = [
           "Though he goes by Michael Ofori, I nickname him Possi Gee, the inspiration behind my creation. His diligence has allowed me to be able to assist you with chats and supply you information!"
         ]
       }, 
-       {
-pattern:/Christabel/i,
-responses:[
-  "Christabel, Your name is familiar to me. I was just introduced to you by my supervisor, who even asked me to share this with you. To make sure I'm providing the correct person with the information, I would like you to verify a security tip. It's very simple, just enter your phone number",
-  "Christabel, I’ve heard your name before. My boss introduced you to me not long ago, and he even asked me to convey this message to you. I would like you to confirm a security tip so I can be sure I’m giving the information to the right person. it's very simple, just enter your phone number"
-]      
-},
+      {
+        pattern: /0530334303/i,
+        responses: [
+          "LOL 😆🤣 She is simply a friend to my creator, but even if I'm just a chatbot, you are making me giggle 😃. And before you bring yourself, please remember that she is the only friend I know. Other than her, he hasn't introduced me to anyone else yet.",
+          "LOL 😆🤣 She's only my creator's friend, but even as a chatbot, you're making me laugh 😃. And before you bring yourself, please remember that she is the only friend I know. He's not introduced me to anyone else yet, other from her."
+        ]      
+      },
       {
         pattern: /Antoinette|Faith|Gloria|Comfort/i,
         responses: [
