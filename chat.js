@@ -273,7 +273,7 @@ responses: [
     }
   },
   {
-    pattern: /my phone number is (\d+)/i,
+    pattern: /my phone number is ([\d\s]+)/i,
     responses: (match) => {
       memory.otherDetails.phoneNumber = match[1];
       return `Thanks! I've saved your phone number as ${memory.otherDetails.phoneNumber}.`;
