@@ -229,12 +229,12 @@ responses: [
     }
   },
   {
-    pattern: /what is my favourite color/i,
+    pattern: /what is my favourite color|what is my favourite colour/i,
     responses: () => {
       if (memory.otherDetails.favoriteColor) {
         return `Your favorite color is ${memory.otherDetails.favoriteColor}.`;
       } else {
-        return "I don't know your favorite color yet. Please tell me by saying 'My favorite color is [color]'.";
+        return "I don't know your favourite colour yet. Please tell me by saying 'My favorite color is [color]'.";
       }
     }
   },
