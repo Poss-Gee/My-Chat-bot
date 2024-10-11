@@ -229,7 +229,7 @@ responses: [
     }
   },
   {
-    pattern: /what is my favorite color/i,
+    pattern: /what is my favourite color/i,
     responses: () => {
       if (memory.otherDetails.favoriteColor) {
         return `Your favorite color is ${memory.otherDetails.favoriteColor}.`;
