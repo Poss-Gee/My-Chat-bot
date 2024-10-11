@@ -163,7 +163,7 @@ responses: [
     ]
   },
   {
-    pattern: /what can you do|do/i,
+    pattern: /what can you do|what's you job|what's your purpose/i,
     responses: [
       "I’m here to assist with answering questions, providing useful information, or just chatting with you. If you’re not sure where to start, ask me anything!",
       "My main role is to chat with you, answer your questions, and provide information or support. Give me a try—what would you like to know?",
