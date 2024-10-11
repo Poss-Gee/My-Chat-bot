@@ -225,7 +225,7 @@ responses: [
     pattern: /my favourite colour is (\w+)/i,
     responses: (match) => {
       memory.otherDetails.favoriteColor = match[1];
-      return `Got it! Your favorite color is ${memory.otherDetails.favoriteColor}.`;
+      return `Got it! Your favourite colour is ${memory.otherDetails.favoriteColor}.`;
     }
   },
   {
