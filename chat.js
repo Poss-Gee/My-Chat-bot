@@ -222,7 +222,7 @@ responses: [
     }
   },
   {
-    pattern: /my favorite color is (\w+)/i,
+    pattern: /my favourite colour is (\w+)/i,
     responses: (match) => {
       memory.otherDetails.favoriteColor = match[1];
       return `Got it! Your favorite color is ${memory.otherDetails.favoriteColor}.`;
@@ -234,7 +234,7 @@ responses: [
       if (memory.otherDetails.favoriteColor) {
         return `Your favorite color is ${memory.otherDetails.favoriteColor}.`;
       } else {
-        return "I don't know your favourite colour yet. Please tell me by saying 'My favorite color is [color]'.";
+        return "I don't know your favourite colour yet. Please tell me by saying 'My favourite colour is [colour]'.";
       }
     }
   },
