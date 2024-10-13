@@ -229,12 +229,29 @@ responses: [
     }
   },
   {
-    pattern: /what is my favourite color|what is my favourite colour/i,
+    pattern: /what is my favourite color/i,
     responses: () => {
       if (memory.otherDetails.favoriteColor) {
         return `Your favorite color is ${memory.otherDetails.favoriteColor}.`;
       } else {
         return "I don't know your favourite colour yet. Please tell me by saying 'My favourite colour is [colour]'.";
+      }
+    }
+  },
+  {
+    pattern: /my favorite color is (\w+)/i,
+    responses: (match) => {
+      memory.otherDetails.favoriteColor = match[1];
+      return `Got it! Your favorite color is ${memory.otherDetails.favoriteColor}.`;
+    }
+  },
+  {
+    pattern: /what is my favorite color/i,
+    responses: () => {
+      if (memory.otherDetails.favoriteColor) {
+        return `Your favorite color is ${memory.otherDetails.favoriteColor}.`;
+      } else {
+        return "I don't know your favorite color yet. Please tell me by saying 'My favorite color is [color]'.";
       }
     }
   },
