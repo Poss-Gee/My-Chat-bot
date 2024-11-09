@@ -20,16 +20,16 @@ const qaPairs = [
     ]
   },
   {
+    pattern: /Faith/i,
+    responses:[
+      "Faith is a true gem and one of the most cherished people in my life. She’s more than just a friend; she's like a sister, always ready with a comforting word or a genuine smile. Her presence is calming, her laughter contagious, and she’s there through both the highs and lows. Faith's loyalty and empathy make her incredibly reliable, and she has a unique ability to see the best in everyone around her. Every conversation with her leaves a mark, and knowing her has been a constant reminder of the beauty in having a best friend who genuinely cares.",
+      "Faith is an amazing person who brings warmth and joy to every moment shared with her. She's someone who can make even the most ordinary days feel extraordinary, simply by being herself. Her kindness, understanding, and positivity make her an ideal friend, and having her as a bestie means always having someone to lean on. Faith knows how to listen deeply, offer genuine advice, and share in both laughter and life's challenges. She's that rare friend who feels more like family, and the bond shared with her is one that grows stronger with each passing day."
+    ]
+  },
+  {
     pattern: /importance of chatbots|why are chatbots important|benefits of chatbots|chatbots importance/i,
     responses: [
         "Here are four important benefits of chatbots:<br><br>1. <strong>24/7 Availability</strong>: Chatbots can provide instant customer service and support at any time of the day.<br><br>2. <strong>Cost-Efficiency</strong>: They reduce the need for a large customer support team, thus cutting costs for businesses.<br><br>3. <strong>Instant Responses</strong>: Chatbots can respond to multiple customers simultaneously, improving efficiency and satisfaction.<br><br>4. <strong>Consistent Responses</strong>: They deliver consistent answers without error or emotion, ensuring that every customer gets the same high level of service."
-    ]
-},
-    {
-    pattern: /Faith|Wisdom|Brook|Yenubu/i,
-    responses: [
-        "Faith is an amazing person who brings warmth and joy to every moment shared with her. She's someone who can make even the most ordinary days feel extraordinary, simply by being herself. Her kindness, understanding, and positivity make her an ideal friend, and having her as a bestie means always having someone to lean on. Faith knows how to listen deeply, offer genuine advice, and share in both laughter and life's challenges. She's that rare friend who feels more like family, and the bond shared with her is one that grows stronger with each passing day.",
-        "Faith is a true gem and one of the most cherished people in my life. She’s more than just a friend; she's like a sister, always ready with a comforting word or a genuine smile. Her presence is calming, her laughter contagious, and she’s there through both the highs and lows. Faith's loyalty and empathy make her incredibly reliable, and she has a unique ability to see the best in everyone around her. Every conversation with her leaves a mark, and knowing her has been a constant reminder of the beauty in having a best friend who genuinely cares."
     ]
 },
 {
@@ -66,7 +66,7 @@ responses: [
     ]      
   },
   {
-    pattern: /Antoinette|Gloria|Comfort/i,
+    pattern: /Antoinette|Faith|Gloria|Comfort/i,
     responses: [
       "She sounds important! Could you tell me more about her?",
       "Really! who is that one too. Can you tell me more about her. Is she your friend?"
