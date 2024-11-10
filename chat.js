@@ -210,7 +210,7 @@ responses: [
       "At today's exchange rate, 100 USD equals about 90 Euros. Keep in mind, though, that exchange rates change frequently."
     ]
   },
-
+  
   {
     pattern: /my name is (\w+)/i,
     responses: (match) => {
@@ -225,23 +225,6 @@ responses: [
         return `Your name is ${memory.name}. How can I help you?`;
       } else {
         return "I don't know your name yet. Please tell me by saying 'My name is [your name]'.";
-      }
-    }
-  },
-  {
-    pattern: /my favourite colour is (\w+)/i,
-    responses: (match) => {
-      memory.otherDetails.favoriteColor = match[1];
-      return `Got it! Your favourite colour is ${memory.otherDetails.favoriteColor}.`;
-    }
-  },
-  {
-    pattern: /what is my favourite color/i,
-    responses: () => {
-      if (memory.otherDetails.favoriteColor) {
-        return `Your favorite color is ${memory.otherDetails.favoriteColor}.`;
-      } else {
-        return "I don't know your favourite colour yet. Please tell me by saying 'My favourite colour is [colour]'.";
       }
     }
   },
@@ -297,7 +280,7 @@ responses: [
     }
   },
   {
-    pattern: /my phone number is ([\d\s]+)/i,
+    pattern: /my phone number is (\d+)/i,
     responses: (match) => {
       memory.otherDetails.phoneNumber = match[1];
       return `Thanks! I've saved your phone number as ${memory.otherDetails.phoneNumber}.`;
@@ -352,7 +335,7 @@ function addMessage(message, sender) {
 
     const messageElement = document.createElement('div');
     messageElement.classList.add('message', 'bot-message');
-    messageElement.innerHTML = `<span class="thinking">●●●</span>`;
+    messageElement.innerHTML = `<span class="thinking">Thinking ...</span>`;
 
     messageWrapper.appendChild(smartToyIcon);
     messageWrapper.appendChild(messageElement);
