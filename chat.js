@@ -54,8 +54,8 @@ responses: [
   {
     pattern:/Christabel/i,
     responses:[
-      "Christabel, Your name is familiar to me. I was just introduced to you by my supervisor, who even asked me to share this with you. To make sure I'm providing the correct person with the information, I would like you to verify a security tip. It's very simple, just enter your phone number",
-      "Christabel, I’ve heard your name before. My boss introduced you to me not long ago, and he even asked me to convey this message to you. I would like you to confirm a security tip so I can be sure I’m giving the information to the right person. it's very simple, just enter your phone number"
+      "Christabel, Your name is familiar to me. I was just introduced to you by my supervisor, who even asked me to share this with you. To make sure I'm providing the correct person with the information, I would like you to verify a security tip. It's very simple, just enter her phone number",
+      "Christabel, I’ve heard your name before. My boss introduced you to me not long ago, and he even asked me to convey this message to you. I would like you to confirm a security tip so I can be sure I’m giving the information to the right person. it's very simple, just enter her phone number"
     ]
   },
   {
