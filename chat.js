@@ -214,14 +214,14 @@ responses: [
   {
     pattern: /my name is (\w+)/i,
     responses: (match) => {
-      memory.name = match[1];
+      memory.otherDetails.name = match[1];
       return `Nice to meet you, ${memory.name}! How can I assist you today?`;
     }
   },
   {
     pattern: /what is my name|do you remember my name/i,
     responses: () => {
-      if (memory.name) {
+      if (memory.otherDetails.name) {
         return `Your name is ${memory.name}. How can I help you?`;
       } else {
         return "I don't know your name yet. Please tell me by saying 'My name is [your name]'.";
